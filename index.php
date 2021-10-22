@@ -21,7 +21,7 @@
                                     echo '<th scope="row">'.$row['id'].'</th>';
                                     echo '<td>'.$row['exam_title'].'</td>';
                                     echo '<td>'.$row['duration'].'</td>';
-                                    echo '<td><a href="View.php?file='.$row['id'].'">Chi tiết</a></td>';
+                                    echo '<td><a href="View.php?id='.$row['id'].'">Chi tiết</a></td>';
                                     echo '</tr>';
 
                          }
@@ -30,9 +30,4 @@
                 </tbody>    
             </table>  
         </div>
-
-        
-
-
-
 <?php include('./header-footer/footer.php'); ?>
