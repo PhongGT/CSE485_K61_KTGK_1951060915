@@ -82,17 +82,9 @@
     </div>
 </form>
 
-<?php
-if (isset($_POST['Save'])) {
 
-    if (mysqli_query($conn, $sql)) {
-        header('location:../index.php');
-    }
-}
-?>
 
-//? đóng kết nối
-mysqli_close($conn);
+
 
 ?>
 <?php include('./header-footer/footer.php'); ?>
