@@ -84,23 +84,9 @@
 
 <?php
 if (isset($_POST['Save'])) {
-    $vehicle_id = $_POST['vehicle_id'];
-    $license_no = $_POST['license_no'];
-    $model = $_POST['model'];
-    $year = $_POST['year'];
-    $ctype = $_POST['ctype'];
-    $drate = $_POST['drate'];
-    $wrate = $_POST['wrate'];
-    $status = $_POST['status'];
 
-    $sql = "UPDATE tb_rentcar(vehicle_id, license_no, model, year, ctype, drate, wrate, status)
-    VALUES ('$vehicle_id','$license_no','$model','$year','$ctype','$drate','$wrate','$status')";
-
-    //? kiểm tra và thực thi lệnh
     if (mysqli_query($conn, $sql)) {
         header('location:../index.php');
-    } else {
-        header('location:Error.php');
     }
 }
 ?>
